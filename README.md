@@ -8,7 +8,7 @@ To perform PCA matrix summation with a 2D grid and 2D blocks and adapting it to 
 
 2.Declare a function sumMatrixOnHost , to perform matrix summation on the host side . Declare three matrix A , B , C . Store the resultant matrix in C.
 
-3.Declare a function with _ global _ , which is a CUDA C keyword , to execute the function to perform matrix summation on GPU .
+3.Declare a function with __ global __ , which is a CUDA C keyword , to execute the function to perform matrix summation on GPU .
 
 4.Declare Main method/function .
 
@@ -21,11 +21,11 @@ To perform PCA matrix summation with a 2D grid and 2D blocks and adapting it to 
 8.Save and Run the Program.
 
 ## Program:
-
+```
 Developed By: Manoj Guna Sundar Tella.
-Reg.No:212221240026.
-
-
+Reg.No: 212221240026.
+```
+```
 #include "common.h"
 #include <cuda_runtime.h>
 #include <stdio.h>
@@ -195,7 +195,7 @@ int main(int argc, char **argv)
 
     return (0);
 }
-
+```
 ## Output:
 ![pca 3](https://user-images.githubusercontent.com/93427522/235589027-ad409113-e0a3-4d52-a82e-287691ac7583.png)
 
@@ -208,3 +208,4 @@ Sum matrix on GPU2D : 0.012146 sec
 
 ## Result:
 Thus the program to perform PCA matrix summation with a 2D grid and 2D blocks and adapting it to integer matrix addition has been successfully executed.
+
